@@ -1,0 +1,19 @@
+image: linarotechnologies/ansible-docker:latest
+manifests:
+  -
+    image: linarotechnologies/ansible-docker:latest-arm64
+    platform:
+      architecture: arm64
+      os: linux
+  -
+    image: linarotechnologies/ansible-docker:latest-armhf
+    platform:
+      architecture: arm
+      os: linux
+  -
+    image: linarotechnologies/ansible-docker:latest-amd64
+    platform:
+      architecture: amd64
+      features:
+        - sse
+      os: linux
